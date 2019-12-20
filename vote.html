@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+
+var hrx = 0;
+var tig = 0;
+function hritik()
+{
+hrx= hrx +1;
+document.getElementById('hrx').innerHTML = hrx;
+}
+
+function tiger()
+{
+tig= tig +1;
+document.getElementById('tig').innerHTML = tig;
+}
+
+
+</script>
+
+<style>
+body {
+	margin:25px;
+	align:center;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+}
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<center><h2>VOTING </h2>
+<div class="row">
+  <div class="column">
+    <img src="hritikvaaniinsta61569322647.jpg" height="500" width="600">
+</div>
+  <div class="column">
+    <img src="tiger-shroff-for-garnier-men.jpg" height="500" width="600" >
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+   <div id="hrx">  <p>    0  </p></div>
+    <input type="button" onclick="hritik();"  class="button" value="Hritik R.">
+  </div>
+  <div class="column">
+  <div id="tig">  <p>    0  </p></div>
+    <input type="button" onclick="tiger();"  class="button" value="Tiger S.">
+  </div>
+</div>
+</center>
+
+
+</body>
+</html>
